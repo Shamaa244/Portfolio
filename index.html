@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Mohamed Waled | Cyber Security Professional & SOC Analyst Candidate</title>
+  <meta name="title" content="Mohamed Waled | Cyber Security Professional & SOC Analyst Candidate">
+  <meta name="description"
+    content="Portfolio of Mohamed Waled - Cyber Security Professional & SOC Analyst Candidate specializing in SIEM (Splunk), Threat Detection, Network Defense (Wireshark, CCNA), and Incident Response.">
+  <meta name="keywords"
+    content="Mohamed Waled, Cyber Security, SOC Analyst, SIEM, Splunk, Wireshark, Incident Response, Threat Detection, Network Security, Benha University">
+  <meta name="author" content="Mohamed Waled">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mohamed-waled.security/">
+  <meta property="og:title" content="Mohamed Waled | Cyber Security Professional & SOC Analyst Candidate">
+  <meta property="og:description"
+    content="Dedicated Cyber Security Professional specializing in security monitoring, threat detection, network defense, and incident response.">
+  <meta property="og:image" content="assets/profile.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300f2fe'><path d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z'/></svg>">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Cyber Animated Canvas & Background Overlays -->
+  <canvas id="cyberCanvas"></canvas>
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+  <div class="cyber-scanline" aria-hidden="true"></div>
+
+  <!-- ─── NAVIGATION BAR ──────────────────────────────────────────── -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Mohamed Waled Portfolio Home">
+        <div class="logo-shield">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <path d="M9 12l2 2 4-4" />
+          </svg>
+        </div>
+        <div class="logo-text">MW<span>_SOC</span></div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Color Theme"
+          title="Toggle Light/Dark Theme">
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm"
+          style="display:none; @media(min-width:768px){display:inline-flex;}">Hire SOC Analyst</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ─── 1. HERO SECTION ─────────────────────────────────────────── -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <!-- Hero Status with Mini Avatar -->
+          <div class="hero-status-row">
+            <div class="hero-mini-avatar-wrap">
+              <img src="assets/profile.jpg" onerror="this.onerror=null; this.src='assets/profile.svg';" alt="Mohamed Waled" class="hero-mini-avatar">
+              <span class="status-beacon mini-beacon"></span>
+            </div>
+            <div class="status-indicator">
+              <span>SYSTEM OPERATIONAL // SOC ANALYST CANDIDATE</span>
+            </div>
+          </div>
+
+          <h1 class="hero-name">
+            Mohamed <br>
+            <span class="text-gradient">Waled</span>
+          </h1>
+
+          <div class="hero-title">
+            <span>&gt; Cyber Security Professional | SOC Analyst Candidate</span>
+            <span class="cursor-blink"></span>
+          </div>
+
+          <p class="hero-description">
+            A dedicated Cyber Security professional with strong expertise in security monitoring, threat detection,
+            network defense, and incident response. Passionate about protecting digital infrastructures and developing
+            practical Security Operations Center (SOC) capabilities to identify, analyze, and mitigate evolving cyber
+            threats.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="#objective" class="btn btn-secondary">
+              <span>SOC Dossier</span>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number">2026<span>.BC</span></span>
+              <span class="metric-label">Cybersec Dept, Benha Univ</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">4<span>+</span></span>
+              <span class="metric-label">Core SOC & Lab Projects</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">3<span>x</span></span>
+              <span class="metric-label">Credentials & Certifications</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Profile Photo Showcase -->
+        <div class="hero-visual reveal">
+          <div class="hero-avatar-card">
+            <div class="hero-photo-frame">
+              <img src="assets/profile.jpg" onerror="this.onerror=null; this.src='assets/profile.svg';" alt="Mohamed Waled - Cyber Security Professional" class="hero-profile-photo" id="heroProfilePhoto">
+              <div class="hero-photo-scanline"></div>
+              <div class="hero-photo-corners">
+                <span class="corner-tl"></span>
+                <span class="corner-tr"></span>
+                <span class="corner-bl"></span>
+                <span class="corner-br"></span>
+              </div>
+              <div class="hero-photo-badge hero-badge-top">
+                <span class="status-beacon" style="width:7px; height:7px;"></span>
+                <span>SOC ANALYST // TIER-1</span>
+              </div>
+              <div class="hero-photo-badge hero-badge-bottom">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <span>THREAT DEFENDER</span>
+              </div>
+            </div>
+            <div class="hero-photo-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 2. ABOUT ME SECTION ─────────────────────────────────────── -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Profile Overview</span>
+          </div>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+          <p class="section-subtitle">A deep dive into my cybersecurity foundation, analytical methodology, and
+            operational commitment.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-avatar-wrapper reveal">
+            <div class="avatar-frame">
+              <img src="assets/profile.jpg" onerror="this.onerror=null; this.src='assets/profile.svg';" alt="Mohamed Waled - Cyber Security Professional"
+                class="avatar-svg" id="profileImg">
+              <div class="avatar-glow-ring"></div>
+              <div class="avatar-tag">
+                <span class="status-beacon" style="width:7px;height:7px;"></span>
+                <span>SECURITY DEFENDER // SOC CANDIDATE</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-details reveal">
+            <p class="about-summary">
+              <strong>Mohamed Waled</strong> is a cybersecurity-focused professional with a strong foundation
+              in <strong>Security Operations Center (SOC) practices</strong>, <strong>Threat Hunting</strong>,
+              <strong>Incident Response</strong>, <strong>SIEM technologies</strong>, and <strong>Network
+                Security</strong>.
+            </p>
+            <p class="about-summary">
+              Through academic specialization at <strong>Benha University (Cyber Security Department)</strong> and
+              intensive hands-on laboratory experience, he has developed practical skills in security monitoring, log
+              analysis, threat investigation, and network defense. Driven by continuous learning and professional
+              growth, he is committed to strengthening organizational security and supporting proactive cyber defense
+              initiatives.
+            </p>
+
+            <div class="strengths-grid">
+              <div class="strength-card">
+                <div class="strength-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="strength-title">Security Monitoring</h3>
+                  <p class="strength-desc">24/7 telemetry surveillance, SIEM rule tuning, and distinguishing true IoCs
+                    from baseline noise.</p>
+                </div>
+              </div>
+
+              <div class="strength-card">
+                <div class="strength-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="strength-title">Threat Hunting</h3>
+                  <p class="strength-desc">Proactive hypothesis-driven investigations mapped against MITRE ATT&amp;CK
+                    adversary tactics.</p>
+                </div>
+              </div>
+
+              <div class="strength-card">
+                <div class="strength-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="strength-title">SIEM &amp; Log Analysis</h3>
+                  <p class="strength-desc">Expertise with Splunk, Sysmon, Windows Event Logs, and correlated security
+                    pipelines.</p>
+                </div>
+              </div>
+
+              <div class="strength-card">
+                <div class="strength-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="strength-title">Network Defense</h3>
+                  <p class="strength-desc">Deep packet inspection using Wireshark, TCP/IP fundamentals, and Cisco
+                    routing security.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 3. EDUCATION SECTION ─────────────────────────────────────── -->
+    <section class="section" id="education" style="background: rgba(11, 19, 34, 0.4);">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Academic Background</span>
+          </div>
+          <h2 class="section-title">Formal <span class="text-gradient">Education</span></h2>
+          <p class="section-subtitle">Rigorous university foundation in computer science, cybersecurity, and applied
+            network defense.</p>
+        </div>
+
+        <div class="education-container reveal">
+          <div class="education-card">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-degree">Bachelor of Computers and Artificial Intelligence</h3>
+                <div class="edu-specialization">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                  <span>Specialization: Cyber Security Department</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="edu-institution">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 21h18M3 7v14M21 7v14M6 21V11M18 21V11M10 21V11M14 21V11M12 3l10 4H2l10-4z" />
+              </svg>
+              <span><strong>Benha University</strong> — Faculty of Computers and Artificial Intelligence</span>
+            </div>
+
+            <div class="edu-coursework-title">// Relevant Cybersecurity &amp; Systems Curriculum</div>
+            <div class="edu-tags">
+              <span class="edu-tag">Network Security &amp; Protocols</span>
+              <span class="edu-tag">Applied Cryptography</span>
+              <span class="edu-tag">Operating Systems &amp; Kernel Hardening</span>
+              <span class="edu-tag">Intrusion Detection &amp; Prevention Systems</span>
+              <span class="edu-tag">Computer Forensics &amp; Incident Triage</span>
+              <span class="edu-tag">Database Security &amp; SQL Defense</span>
+              <span class="edu-tag">Secure Systems Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 4. TECHNICAL SKILLS SECTION ─────────────────────────────── -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Capabilities Matrix</span>
+          </div>
+          <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+          <p class="section-subtitle">Proficiencies in Security Operations Center tooling, network protocols, defensive
+            toolsets, and productivity environments.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter-nav reveal">
+          <button class="filter-btn active" data-filter="all">All Disciplines</button>
+          <button class="filter-btn" data-filter="cybersecurity">Cyber Security</button>
+          <button class="filter-btn" data-filter="networking">Networking</button>
+          <button class="filter-btn" data-filter="devtools">Development Tools</button>
+          <button class="filter-btn" data-filter="productivity">Productivity</button>
+        </div>
+
+        <div class="skills-categories-grid">
+          <!-- Category 1: Cyber Security -->
+          <div class="skill-category-card reveal" data-category="cybersecurity">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3 class="category-title">Cyber Security</h3>
+              <span class="category-counter">7 Key Tools</span>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">SIEM Platforms</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Splunk Enterprise / Cloud</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Wireshark Packet Analysis</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Event Log Analysis (Sysmon/WEF)</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Incident Monitoring</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Threat Detection Fundamentals</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Security Awareness &amp; Training</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">MITRE ATT&amp;CK Framework</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Networking -->
+          <div class="skill-category-card reveal" data-category="networking">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="6" height="6" rx="1"></rect>
+                  <rect x="16" y="2" width="6" height="6" rx="1"></rect>
+                  <rect x="9" y="16" width="6" height="6" rx="1"></rect>
+                  <path d="M5 8v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"></path>
+                  <line x1="12" y1="13" x2="12" y2="16"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Networking</h3>
+              <span class="category-counter">5 Core Areas</span>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Cisco Packet Tracer</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Routing &amp; Switching (OSPF, VLANs)</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">TCP/IP Protocol Suite</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Network Troubleshooting</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Network Fundamentals &amp; Subnetting</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Firewall ACLs &amp; NAT/PAT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Development Tools -->
+          <div class="skill-category-card reveal" data-category="devtools">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Development Tools</h3>
+              <span class="category-counter">IDE &amp; Scripting</span>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Visual Studio</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">NetBeans</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">PyCharm</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Python Scripting for Security</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Git &amp; GitHub Version Control</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Bash / Linux CLI Utilities</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Productivity Tools -->
+          <div class="skill-category-card reveal" data-category="productivity">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Productivity Tools</h3>
+              <span class="category-counter">Reporting Suite</span>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Microsoft Word (SOC Reports)</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Microsoft Excel (Log/Data Triage)</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Microsoft PowerPoint (Briefings)</span>
+              </div>
+              <div class="skill-item">
+                <svg class="skill-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="skill-name">Incident Documentation Standards</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 5. PROJECTS SECTION ─────────────────────────────────────── -->
+    <section class="section" id="projects" style="background: rgba(8, 15, 27, 0.45);">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Security Engineering &amp; Analysis</span>
+          </div>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">Real-world laboratory implementations simulating enterprise SOC triage, packet
+            dissection, and incident response.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: SOC Monitoring Lab -->
+          <div class="project-card reveal">
+            <div class="project-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-tag-corner">LAB / SIEM</div>
+              <div class="project-banner-icon">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">SOC Monitoring Lab</h3>
+              <p class="project-description">
+                Built an enterprise-scale virtualized SOC monitoring environment with Active Directory, Windows Server,
+                and endpoint clients sending Sysmon and Windows security logs to Splunk. Implemented tailored detection
+                rules for credential dumping, Pass-the-Hash, and brute force attacks.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge">Splunk</span>
+                <span class="tech-badge">Sysmon</span>
+                <span class="tech-badge">Windows Event Forwarding</span>
+                <span class="tech-badge">Active Directory</span>
+                <span class="tech-badge">VirtualBox</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-github-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  <span>Repository</span>
+                </a>
+                <button class="project-details-btn" data-project="soc-lab">
+                  <span>Deep Dive</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Network Traffic Analysis Using Wireshark -->
+          <div class="project-card reveal">
+            <div class="project-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-tag-corner">PACKET FORENSICS</div>
+              <div class="project-banner-icon">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Network Traffic Analysis Using Wireshark</h3>
+              <p class="project-description">
+                Conducted rigorous deep packet inspection across multi-gigabyte PCAP files to isolate malicious
+                command-and-control (C2) beaconing, identify unencrypted credentials, extract decoded DNS exfiltration
+                payloads, and reconstruct full TCP stream conversations.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge">Wireshark</span>
+                <span class="tech-badge">TCP/IP</span>
+                <span class="tech-badge">Protocol Inspection</span>
+                <span class="tech-badge">PCAP Dissection</span>
+                <span class="tech-badge">Network Forensics</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-github-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  <span>Repository</span>
+                </a>
+                <button class="project-details-btn" data-project="wireshark-analysis">
+                  <span>Deep Dive</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Splunk Log Analysis Dashboard -->
+          <div class="project-card reveal">
+            <div class="project-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-tag-corner">SIEM / ANALYTICS</div>
+              <div class="project-banner-icon">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 3v18h18"></path>
+                  <path d="M18 17V9"></path>
+                  <path d="M13 17V5"></path>
+                  <path d="M8 17v-3"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Splunk Log Analysis Dashboard</h3>
+              <p class="project-description">
+                Engineered interactive Splunk SOC operational dashboards utilizing Search Processing Language (SPL) to
+                visualize real-time authentication anomalies, failed logons by geolocation, suspicious PowerShell
+                executions, and abnormal egress traffic spikes.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge">Splunk Enterprise</span>
+                <span class="tech-badge">SPL Query Optimization</span>
+                <span class="tech-badge">Dashboard Studio</span>
+                <span class="tech-badge">Correlation Rules</span>
+                <span class="tech-badge">Data Parsing</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-github-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  <span>Repository</span>
+                </a>
+                <button class="project-details-btn" data-project="splunk-dashboard">
+                  <span>Deep Dive</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Threat Detection & Incident Investigation -->
+          <div class="project-card reveal">
+            <div class="project-banner">
+              <div class="project-banner-overlay"></div>
+              <div class="project-tag-corner">INCIDENT RESPONSE</div>
+              <div class="project-banner-icon">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                  </path>
+                  <line x1="12" y1="9" x2="12" y2="13"></line>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Threat Detection &amp; Incident Investigation Simulation</h3>
+              <p class="project-description">
+                Simulated an end-to-end adversary campaign adhering to NIST SP 800-61 / PICERL methodology. Triaged
+                alerts, traced initial execution via malicious macros, performed disk and memory timeline analysis,
+                contained simulated spread, and drafted post-incident review documentation.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge">MITRE ATT&amp;CK</span>
+                <span class="tech-badge">NIST PICERL</span>
+                <span class="tech-badge">Incident Triage</span>
+                <span class="tech-badge">Root-Cause Analysis</span>
+                <span class="tech-badge">Remediation</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-github-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  <span>Repository</span>
+                </a>
+                <button class="project-details-btn" data-project="incident-investigation">
+                  <span>Deep Dive</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 6. CERTIFICATIONS SECTION ───────────────────────────────── -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Verified Credentials</span>
+          </div>
+          <h2 class="section-title">Professional <span class="text-gradient">Certifications</span></h2>
+          <p class="section-subtitle">Industry qualifications validating technical competence in computer networks, IoT
+            ecosystems, and defensive cybersecurity.</p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1: CCNA -->
+          <div class="cert-card reveal">
+            <div class="cert-badge-icon">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 12h8"></path>
+                <path d="M12 8v8"></path>
+              </svg>
+            </div>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <h3 class="cert-name">CCNA (Cisco Certified Network Associate)</h3>
+            <p class="cert-desc">
+              Validates mastery over network fundamentals, IP connectivity, IP services (DHCP, DNS, NAT), security
+              fundamentals, ACLs, and automated routing protocols.
+            </p>
+            <div class="cert-status-badge">
+              <span>✔ Verified Qualification</span>
+            </div>
+          </div>
+
+          <!-- Cert 2: Intro to IoT -->
+          <div class="cert-card reveal">
+            <div class="cert-badge-icon">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 11a9 9 0 0 1 9 9"></path>
+                <path d="M4 4a16 16 0 0 1 16 16"></path>
+                <circle cx="5" cy="19" r="1"></circle>
+              </svg>
+            </div>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <h3 class="cert-name">Introduction to IoT</h3>
+            <p class="cert-desc">
+              Comprehensive understanding of connected sensor architectures, machine-to-machine telemetry, IoT protocol
+              security, and embedded endpoint risk analysis.
+            </p>
+            <div class="cert-status-badge">
+              <span>✔ Verified Qualification</span>
+            </div>
+          </div>
+
+          <!-- Cert 3: Cybersecurity Diploma -->
+          <div class="cert-card reveal">
+            <div class="cert-badge-icon">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <div class="cert-issuer">Specialized Cyber Security Academy</div>
+            <h3 class="cert-name">Cybersecurity Diploma</h3>
+            <p class="cert-desc">
+              In-depth specialization program covering defensive engineering, vulnerability assessment, cryptography,
+              web security vulnerabilities (OWASP Top 10), and SOC fundamentals.
+            </p>
+            <div class="cert-status-badge">
+              <span>✔ Accredited Diploma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 7. EXPERIENCE SECTION ───────────────────────────────────── -->
+    <section class="section" id="experience" style="background: rgba(11, 19, 34, 0.4);">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Practical Background</span>
+          </div>
+          <h2 class="section-title">Academic &amp; <span class="text-gradient">Hands-on Experience</span></h2>
+          <p class="section-subtitle">Applied experience executing threat simulations, multi-tier enterprise networking
+            topologies, and security operations center exercises.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Item 1: Security Labs -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Security Labs &amp; Virtualized Cyber Range Engineering</h3>
+                <span class="timeline-badge">Hands-on Laboratory</span>
+              </div>
+              <p class="timeline-content">
+                Architected and deployed segmented virtualized testbeds replicating authentic corporate IT
+                infrastructures with domain controllers, user workstations, and defensive telemetry collectors.
+              </p>
+              <div class="timeline-bullets">
+                <div class="timeline-bullet">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span>Provisioned Active Directory domain environments with localized Group Policy Objects (GPOs) and
+                    auditable event generation.</span>
+                </div>
+                <div class="timeline-bullet">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span>Executed benign and adversary emulation scripts to confirm endpoint visibility, validating that
+                    security sensors capture essential telemetry.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Network Configuration Projects -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Enterprise Network Configuration &amp; Topology Projects</h3>
+                <span class="timeline-badge">Cisco Packet Tracer</span>
+              </div>
+              <p class="timeline-content">
+                Engineered complex corporate campus networks incorporating layer-2 switching resilience, layer-3
+                inter-VLAN routing, and hardened perimeter access control lists.
+              </p>
+              <div class="timeline-bullets">
+                <div class="timeline-bullet">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span>Designed multi-area OSPF routing topologies with loop-prevention protocols (STP/RSTP) and
+                    EtherChannel link aggregation.</span>
+                </div>
+                <div class="timeline-bullet">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span>Implemented Port Security, DHCP snooping, and standard/extended ACLs to safeguard internal
+                    segments from spoofing and unauthorized traversing.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Log Analysis Exercises -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Forensic Log Analysis &amp; Artifact Investigation</h3>
+                <span class="timeline-badge">SIEM &amp; Threat Forensics</span>
+              </div>
+              <p class="timeline-content">
+                Parsed and correlated high-volume security event telemetry across disparate endpoints, firewalls, and
+                network devices to reconstruct end-to-end incident chronology.
+              </p>
+              <div class="timeline-bullets">
+                <div class="timeline-bullet">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span>Analyzed Windows Security Event IDs (4624, 4625, 4672, 4720, 7045) alongside Sysmon Events (1,
+                    3, 7, 10) to identify adversary persistence.</span>
+                </div>
+                <div class="timeline-bullet">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span>Authored customized Splunk SPL queries to calculate baseline deviation and surface suspicious
+                    PowerShell encoded commands.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: SOC Simulation Activities -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">SOC Simulation &amp; Alert Triage Operations</h3>
+                <span class="timeline-badge">Operational SOC Practice</span>
+              </div>
+              <p class="timeline-content">
+                Simulated real-time Security Operations Center tier-1 alert intake, prioritizing incoming incident
+                queues according to impact severity and business risk.
+              </p>
+              <div class="timeline-bullets">
+                <div class="timeline-bullet">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span>Conducted alert triage workflows, isolating true positives from benign environmental noise and
+                    tuning correlation logic.</span>
+                </div>
+                <div class="timeline-bullet">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span>Authored comprehensive Incident Triage Summaries including extracted indicators of compromise
+                    (IP, domain, hash) and immediate isolation steps.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 8. SERVICES SECTION ─────────────────────────────────────── -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Security Value Proposition</span>
+          </div>
+          <h2 class="section-title">Core <span class="text-gradient">Services &amp; Capabilities</span></h2>
+          <p class="section-subtitle">Dedicated cybersecurity competencies ready to support enterprise security
+            operations, threat hunting, and infrastructure protection.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3 class="service-title">Security Monitoring</h3>
+            <p class="service-desc">
+              Continuous vigilance across digital assets, endpoint telemetry, and authentication servers. Rapidly
+              triages alerts to suppress noise and escalate critical threats without delay.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                </path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Log Analysis</h3>
+            <p class="service-desc">
+              Deep ingestion, normalization, and contextual parsing of Windows security logs, Linux auth logs, firewall
+              syslogs, and Sysmon data to expose hidden indicators of compromise.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">Network Security Assessment</h3>
+            <p class="service-desc">
+              Traffic analysis, packet dissection via Wireshark, protocol sanity audits, rogue DHCP detection, and
+              perimeter firewall ACL configuration checks for hardened boundaries.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Cyber Security Awareness Support</h3>
+            <p class="service-desc">
+              Assisting organizations in educating human capital on phishing countermeasures, credential hygiene,
+              password management, and safe operational guidelines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 9. CAREER OBJECTIVE SECTION ─────────────────────────────── -->
+    <section class="section" id="objective" style="background: rgba(8, 15, 27, 0.5);">
+      <div class="container">
+        <div class="objective-card reveal">
+          <svg class="objective-quote-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+          </svg>
+
+          <blockquote class="objective-text">
+            “To build a successful career in <strong>Security Operations Center (SOC) environments</strong> by
+            leveraging expertise in <strong>security monitoring</strong>, <strong>threat detection</strong>,
+            <strong>SIEM platforms</strong>, and <strong>incident response</strong>. Committed to helping organizations
+            strengthen their security posture through proactive threat analysis, continuous monitoring, and operational
+            excellence.”
+          </blockquote>
+
+          <div class="objective-pillars">
+            <div class="pillar-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Continuous Vigilance</span>
+            </div>
+            <div class="pillar-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Rapid Containment Mindset</span>
+            </div>
+            <div class="pillar-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Analytical Precision</span>
+            </div>
+            <div class="pillar-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Zero-Trust Alignment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 10 & 11. LANGUAGES & INTERESTS SECTION ──────────────────── -->
+    <section class="section" id="interests-languages">
+      <div class="container">
+        <div class="dual-section-grid">
+          <!-- 10. Languages -->
+          <div class="dual-box reveal">
+            <h3 class="dual-box-title">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+              </svg>
+              <span>Languages</span>
+            </h3>
+
+            <div class="languages-list">
+              <div class="language-item">
+                <div class="language-info">
+                  <span class="language-name">Arabic</span>
+                  <span class="language-level">Native Proficiency (100%)</span>
+                </div>
+                <div class="language-bar-track">
+                  <div class="language-bar-fill" style="width: 100%;"></div>
+                </div>
+              </div>
+
+              <div class="language-item">
+                <div class="language-info">
+                  <span class="language-name">English</span>
+                  <span class="language-level">Very Good / Professional Working (85%)</span>
+                </div>
+                <div class="language-bar-track">
+                  <div class="language-bar-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 24px; line-height: 1.6;">
+              Capable of authoring professional technical incident response reports, communicating cross-functionally,
+              and collaborating in global multinational SOC environments.
+            </p>
+          </div>
+
+          <!-- 11. Interests -->
+          <div class="dual-box reveal">
+            <h3 class="dual-box-title">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              <span>Areas of Interest</span>
+            </h3>
+
+            <div class="interests-cloud">
+              <div class="interest-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                <span>Security Operations Center (SOC)</span>
+              </div>
+              <div class="interest-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Threat Hunting</span>
+              </div>
+              <div class="interest-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+                <span>Incident Response</span>
+              </div>
+              <div class="interest-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="6" height="6" rx="1"></rect>
+                  <rect x="16" y="2" width="6" height="6" rx="1"></rect>
+                  <rect x="9" y="16" width="6" height="6" rx="1"></rect>
+                </svg>
+                <span>Network Security</span>
+              </div>
+              <div class="interest-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                </svg>
+                <span>Digital Forensics</span>
+              </div>
+              <div class="interest-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <span>Cyber Threat Intelligence</span>
+              </div>
+              <div class="interest-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                </svg>
+                <span>SIEM Technologies</span>
+              </div>
+              <div class="interest-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>Security Monitoring</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 12. PROFESSIONAL DEVELOPMENT GOALS (ROADMAP) ───────────── -->
+    <section class="section" id="roadmap" style="background: rgba(11, 19, 34, 0.45);">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Continuous Learning Roadmap</span>
+          </div>
+          <h2 class="section-title">Professional <span class="text-gradient">Development Goals</span></h2>
+          <p class="section-subtitle">Structured roadmap of upcoming industry credentials targeted to elevate
+            operational defense and threat analytics mastery.</p>
+        </div>
+
+        <div class="roadmap-timeline">
+          <!-- Step 1 -->
+          <div class="roadmap-node reveal">
+            <div class="roadmap-marker">01</div>
+            <div class="roadmap-card">
+              <span class="roadmap-status">Targeted / Active Prep</span>
+              <h3 class="roadmap-title">CompTIA Security+</h3>
+              <div class="roadmap-org">CompTIA</div>
+              <p style="font-size:0.78rem; color:var(--text-muted); margin-top:8px;">Core security principles, risk
+                management, identity &amp; access control.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="roadmap-node reveal">
+            <div class="roadmap-marker">02</div>
+            <div class="roadmap-card">
+              <span class="roadmap-status">Targeted 2025</span>
+              <h3 class="roadmap-title">CompTIA CySA+</h3>
+              <div class="roadmap-org">CompTIA</div>
+              <p style="font-size:0.78rem; color:var(--text-muted); margin-top:8px;">Behavioral analytics, vulnerability
+                mitigation, and threat intelligence.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="roadmap-node reveal">
+            <div class="roadmap-marker">03</div>
+            <div class="roadmap-card">
+              <span class="roadmap-status planned">Planned Milestone</span>
+              <h3 class="roadmap-title">CEH (Ethical Hacker)</h3>
+              <div class="roadmap-org">EC-Council</div>
+              <p style="font-size:0.78rem; color:var(--text-muted); margin-top:8px;">Offensive insights to better
+                anticipate attacker vectors and tactics.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="roadmap-node reveal">
+            <div class="roadmap-marker">04</div>
+            <div class="roadmap-card">
+              <span class="roadmap-status">Targeted 2025</span>
+              <h3 class="roadmap-title">Microsoft SC-900</h3>
+              <div class="roadmap-org">Microsoft</div>
+              <p style="font-size:0.78rem; color:var(--text-muted); margin-top:8px;">Microsoft Security, Compliance, and
+                Identity Fundamentals.</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="roadmap-node reveal">
+            <div class="roadmap-marker">05</div>
+            <div class="roadmap-card">
+              <span class="roadmap-status target">Future Milestone</span>
+              <h3 class="roadmap-title">Microsoft SC-200</h3>
+              <div class="roadmap-org">Microsoft</div>
+              <p style="font-size:0.78rem; color:var(--text-muted); margin-top:8px;">Microsoft Security Operations
+                Analyst (Sentinel &amp; Defender).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 13. CONTACT SECTION ─────────────────────────────────────── -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <span class="dot"></span>
+            <span>Initiate Communication</span>
+          </div>
+          <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+          <p class="section-subtitle">Interested in recruiting a motivated SOC Analyst candidate or discussing a
+            security project? Connect directly below.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details -->
+          <div class="contact-info-panel reveal">
+            <h3 class="contact-info-title">Direct Channels</h3>
+            <p class="contact-info-desc">
+              Always eager to discuss SOC Analyst roles, cybersecurity internships, threat hunting collaborations, or
+              security initiatives.
+            </p>
+
+            <div class="contact-details-list">
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <span class="contact-item-label">Email Address (Click to Copy)</span>
+                  <a href="mailto:mohamedshamaa518@gmail.com" class="contact-item-value copyable"
+                    data-copy="mohamedshamaa518@gmail.com">
+                    mohamedshamaa518@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <span class="contact-item-label">Phone &amp; WhatsApp</span>
+                  <a href="tel:+201015123390" class="contact-item-value copyable" data-copy="+201015123390">
+                    +20 1015123390
+                  </a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <span class="contact-item-label">Geographic Location</span>
+                  <span class="contact-item-value">Dakahlia, Egypt (Open to Remote &amp; Relocation)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links-wrapper">
+              <div class="social-links-title">// Professional Networks</div>
+              <div class="social-icons-row">
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                  aria-label="LinkedIn Profile" title="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                  aria-label="GitHub Profile" title="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                  aria-label="YouTube Channel" title="YouTube">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                  </svg>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                  aria-label="Facebook Profile" title="Facebook">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-panel reveal">
+            <form id="contactForm" autocomplete="off">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Full Name *</label>
+                <input type="text" id="senderName" class="form-input" placeholder="e.g. Sarah Jenkins (SOC Manager)"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Email Address *</label>
+                <input type="email" id="senderEmail" class="form-input"
+                  placeholder="e.g. s.jenkins@enterprise-security.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject" class="form-label">Subject</label>
+                <input type="text" id="senderSubject" class="form-input"
+                  placeholder="e.g. SOC Analyst Position / Project Discussion">
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">Message *</label>
+                <textarea id="senderMessage" class="form-textarea"
+                  placeholder="Describe the opportunity, technical requirements, or consultation inquiry..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Dispatch Transmission</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── 14. FOOTER ────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="brand-logo" style="font-size: 1rem;">
+          <div class="logo-shield" style="width:28px; height:28px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <div class="logo-text">Mohamed Waled</div>
+        </div>
+        <p class="footer-copy">
+          Copyright &copy; 2026 Mohamed Waled. All Rights Reserved. Built with Cyber Defense Excellence.
+        </p>
+        <div class="footer-soc-status">
+          <span class="footer-status-dot"></span>
+          <span>Threat Status: Normal | SOC Telemetry Sensor: Nominal</span>
+        </div>
+      </div>
+
+      <div>
+        <a href="#hero" class="back-to-top-btn" id="backToTop" aria-label="Return to top of page">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── INTERACTIVE PROJECT DETAILS MODAL ────────────────────────── -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalClose" aria-label="Close Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-body" id="modalDetails">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Engine -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
